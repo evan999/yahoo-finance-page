@@ -1,18 +1,65 @@
 <!DOCTYPE html>
+<style>
+
+.bg{
+    background-color: #AED6F1;
+}
+
+.text{
+    font-family: arial;
+    font-size: 10pt;
+}
+
+.home-header{
+    font-family: arial;
+}
+
+.question-text{
+    font-family: arial;
+}
+
+#bottom-text{
+    font-style: italic;
+}
+
+#greeting{
+    font-size: 14pt;
+}
+
+.paragraph{
+    font-size: 12pt;
+    font-family: arial;
+}
+
+li{
+    list-style: none;
+}
+    
+</style>
+
 <html>
     <head>
-        <title>Finance Portfolio</title>
-        <body>
-            <h1>Stocks, Stocks, and More Stocks!</h1>
-                <h3>Welcome!</h3>
-                <p>Hello, I am the Finance Digital Assistant!</p>
-                <p>I specialize in sharing information about stocks.</p>
-                <h2>How can I help you?:)</h2>
+        <title class = 'home-title'>Finance Digital Assistant</title>
+        <body class = "bg">
+                <h1 class = 'home-header'>Welcome!</h1>
+                <p class = "text" id = "greeting">Hello, I am the Finance Digital Assistant!</p>
+                <img class = "img" src = "https://www.training.com.au/wp-content/uploads/Finance-courses-1.jpg" />
+                <p class = "paragraph">I specialize in sharing information about stocks.</p>
+                <img class = "">
+                <h2 class = "question-text">How can I help you?:)</h2>
                 <ul>
-                    <a href= "#"><li>I want to view a finance portfolio!</li></a>
-                    <a href= "#"><li>Tell me about stocks!</li></a>
-                    <a href= "#"><li>Help me! I'm lost!:( Where do I start???</li></a>
+                    <a href= "finance.html"><li class = "text">I want to view a stock portfolio!</li></a>
+                    <a href= "https://www.thebalance.com/the-complete-beginner-s-guide-to-investing-in-stock-358114"><li class = "text">Tell me about stocks!</li></a>
+                    <a href= "https://finance.yahoo.com/"><li class = "text">I wanna build a stock portfolio! Where do I start?</li></a>
                 </ul>
+                <p class = "text" id = "bottom-text">Can't find what you're looking for? Let me try looking for you! Enter in below what you want to find:</p>
+                <form>
+ 
+    <input type="text" name="firstname"><br>
+    <button class = "button">Submit</button>
+
+  
+</form>
         </body>
     </head>
 </html>
