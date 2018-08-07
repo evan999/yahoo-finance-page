@@ -1,145 +1,178 @@
 <!DOCTYPE html>
+<style>
+
+  .data-table {
+      border: 1px solid black;
+      height: 25%;
+  }
+  .table-col {
+      border: 1px solid black;
+      width: 100px;
+  }
+  
+  td{
+      border: 1px solid black;
+  }
+  
+  .symbol{
+      color: blue;
+      font-weight: bold;
+  }
+   
+    
+       
+    
+</style>
 <html>
     <head>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+        <!--
+        <script>global(document).on(‘click’, ‘.dropdown-menu-button’, function (e) {
+                e.stopPropagation();
+                });
+        </script>
+        --> 
     </head>
     <body>
-        <table>
-    <thead>
-        <tr>
-            <th>Symbol</th>
-            <th>Last Price</th>
-            <th>Change</th>
-            <th>% Chg</th>
-            <th>Volume</th>
-            <th>52 Week Low</th>
-            <th>52 Week High</th>
-            <th>Market Cap</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>LMT</td>
-            <td>324.09</td>
-            <td>+1.15</td>
-            <td>+0.36%</td>
-            <td>1.01M</td>
-            <td>291.03</td>
-            <td>363.00</td>
-            <td>92.54B</td>
-        </tr>
-        <tr>
-            <td>SNAP</td>
-            <td>12.83</td>
-            <td>-0.54</td>
-            <td>-4.04%</td>
-            <td>28.31M</td>
-            <td>10.50</td>
-            <td>21.22</td>
-            <td>16.29B</td>
-        </tr>
-        <tr>
-            <td>MSFT</td>
-            <td>107.68</td>
-            <td>-1.94</td>
-            <td>-1.77%</td>
-            <td>37.01M</td>
-            <td>71.28</td>
-            <td>111.15</td>
-            <td>827.33B</td>
-        </tr>
-        <tr>
-            <td>DIS</td>
-            <td>112.62</td>
-            <td>-0.89</td>
-            <td>-0.78%</td>
-            <td>5.72M</td>
-            <td>96.20</td>
-            <td>114.68</td>
-            <td>167.44B</td>
-        </tr>
-        <tr>
-            <td>P</td>
-            <td>7.56</td>
-            <td>-0.53</td>
-            <td>-6.55%</td>
-            <td>9.32M</td>
-            <td>4.09</td>
-            <td>9.48</td>
-            <td>2.01B</td>
-        </tr>
-        <tr>
-            <td>SPOT</td>
-            <td>186.27</td>
-            <td>-10.01</td>
-            <td>-5.10%</td>
-            <td>4.13M</td>
-            <td>135.51</td>
-            <td>196.56</td>
-            <td>33.18B</td>
-        </tr>
-        <tr>
-            <td>IBM</td>
-            <td>145.49</td>
-            <td>+0.34</td>
-            <td>+0.23%</td>
-            <td>3.61M</td>
-            <td>137.45</td>
-            <td>171.13</td>
-            <td>133.56B</td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    </tbody>
-</table>
-        
+        <title id = "porfolio-title">Portfolio</title>
+        <h1 class = "portfolio-header">Stock Portfolio</h1>
+        <table class = "data-table">
+                <tr class = "table-row">
+                    <th class = "table-col">Symbol</th>
+                    <th class = "table-col">Last Price</th>
+                    <th class = "table-col">Change</th>
+                    <th class = "table-col">% Chg</th>
+                    <th class = "table-col">Volume</th>
+                    <th class = "table-col">52 Week Low</th>
+                    <th class = "table-col">52 Week High</th>
+                    <th class = "table-col">Market Cap</th>
+                </tr>
+            <tbody>
+                <tr class = "table-row">
+                    <td class = "symbol">LMT</td>
+                    <td>324.09</td>
+                    <td>+1.15</td>
+                    <td style = "color: green;">+0.36%</td>
+                    <td>1.01M</td>
+                    <td>291.03</td>
+                    <td>363.00</td>
+                    <td>92.54B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">SNAP</td>
+                    <td>12.83</td>
+                    <td style = "color: red">-0.54</td>
+                    <td style = "color: red">-4.04%</td>
+                    <td>28.31M</td>
+                    <td>10.50</td>
+                    <td>21.22</td>
+                    <td>16.29B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">MSFT</td>
+                    <td>107.68</td>
+                    <td>-1.94</td>
+                    <td>-1.77%</td>
+                    <td>37.01M</td>
+                    <td>71.28</td>
+                    <td>111.15</td>
+                    <td>827.33B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">DIS</td>
+                    <td>112.62</td>
+                    <td>-0.89</td>
+                    <td>-0.78%</td>
+                    <td>5.72M</td>
+                    <td>96.20</td>
+                    <td>114.68</td>
+                    <td>167.44B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">P</td>
+                    <td>7.56</td>
+                    <td>-0.53</td>
+                    <td>-6.55%</td>
+                    <td>9.32M</td>
+                    <td>4.09</td>
+                    <td>9.48</td>
+                    <td>2.01B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">SPOT</td>
+                    <td>186.27</td>
+                    <td>-10.01</td>
+                    <td>-5.10%</td>
+                    <td>4.13M</td>
+                    <td>135.51</td>
+                    <td>196.56</td>
+                    <td>33.18B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">IBM</td>
+                    <td>145.49</td>
+                    <td>+0.34</td>
+                    <td>+0.23%</td>
+                    <td>3.61M</td>
+                    <td>137.45</td>
+                    <td>171.13</td>
+                    <td>133.56B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">UTX</td>
+                    <td>133.94</td>
+                    <td>+0.05</td>
+                    <td>+0.04%</td>
+                    <td>1.95M</td>
+                    <td>109.10</td>
+                    <td>139.24</td>
+                    <td>107.16B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">FB-U.TI</td>
+                    <td>159.00</td>
+                    <td>+6.00</td>
+                    <td>+3.92%</td>
+                    <td>1.47k</td>
+                    <td>154.20</td>
+                    <td>158.40</td>
+                    <td>-</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">AMZN</td>
+                    <td>1847.75</td>
+                    <td>+24.46</td>
+                    <td>+1.34%</td>
+                    <td>3.39M</td>
+                    <td>931.75</td>
+                    <td>1880.05</td>
+                    <td>896.58B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">GOOG</td>
+                    <td>1224.77</td>
+                    <td>+1.06</td>
+                    <td>+0.09%</td>
+                    <td>1.08M</td>
+                    <td>903.40</td>
+                    <td>1273.89</td>
+                    <td>853.21B</td>
+                </tr>
+                <tr class = "table-row">
+                    <td class = "symbol">JBLU</td>
+                    <td>18.35</td>
+                    <td>+0.10</td>
+                    <td>+0.55%</td>
+                    <td>3.80M</td>
+                    <td>17.10</td>
+                    <td>23.08</td>
+                    <td>5.81B</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
