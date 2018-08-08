@@ -3,6 +3,7 @@
 
 .bg{
     background-color: #AED6F1;
+    text-align: center;
 }
 
 .text{
@@ -31,35 +32,34 @@
     font-family: arial;
 }
 
-li{
+.options{
+    font-family: arial !important;
     list-style: none;
+    padding-right: 20px;
 }
+
     
 </style>
 
 <html>
     <head>
         <title class = 'home-title'>Finance Digital Assistant</title>
-        <body class = "bg">
-                <h1 class = 'home-header'>Welcome!</h1>
-                <p class = "text" id = "greeting">Hello, I am the Finance Digital Assistant!</p>
-                <img class = "img" src = "https://www.training.com.au/wp-content/uploads/Finance-courses-1.jpg" />
-                <p class = "paragraph">I specialize in sharing information about stocks.</p>
-                <img class = "">
-                <h2 class = "question-text">How can I help you?:)</h2>
-                <ul>
-                    <a href= "finance.html"><li class = "text">I want to view a stock portfolio!</li></a>
-                    <a href= "https://www.thebalance.com/the-complete-beginner-s-guide-to-investing-in-stock-358114"><li class = "text">Tell me about stocks!</li></a>
-                    <a href= "https://finance.yahoo.com/"><li class = "text">I wanna build a stock portfolio! Where do I start?</li></a>
-                </ul>
-                <p class = "text" id = "bottom-text">Can't find what you're looking for? Let me try looking for you! Enter in below what you want to find:</p>
-                <form>
- 
-    <input type="text" name="firstname"><br>
-    <button class = "button">Submit</button>
-
-  
-</form>
-        </body>
     </head>
+    <body class = "bg">
+        <h1 class = 'home-header'>Welcome!</h1>
+        <p class = "text" id = "greeting">Hello, I am the Finance Digital Assistant!</p>
+        <img class = "img" src = "https://www.training.com.au/wp-content/uploads/Finance-courses-1.jpg" />
+        <p class = "paragraph">I specialize in sharing in helping young traders build their stock portfolios.</p>
+        <h2 class = "question-text">How can I help you?:)</h2>
+        <ul>
+            <a href= "finance.html"><li class = "options">I want to view a stock portfolio!</li></a>
+            <a href= "https://www.thebalance.com/the-complete-beginner-s-guide-to-investing-in-stock-358114"><li class = "options">Tell me about stocks!</li></a>
+            <a href= "https://finance.yahoo.com/"><li class = "options">I wanna build a stock portfolio! Where do I start?</li></a>
+        </ul>
+        <p class = "text" id = "bottom-text">Can't find what you're looking for? Enter in below what you want to find:</p>
+        <form>
+            <input type="text" name="firstname"><br>
+            <button class = "button">Submit</button>
+        </form>
+    </body>
 </html>
